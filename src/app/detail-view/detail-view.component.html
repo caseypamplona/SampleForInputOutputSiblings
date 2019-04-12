@@ -1,0 +1,11 @@
+<div class="alert alert-info"*ngIf="student">
+
+Name is {{student.name}} but you can call me {{student.nickname}}!
+</div>
+
+<div>
+  Add student
+  Name: <input type="text" [(ngModel)]="name"> <br>
+  Nickname: <input type="text" [(ngModel)]="nickname"> <br>
+  <button (click)="addStudent()">Add Student</button>
+</div>

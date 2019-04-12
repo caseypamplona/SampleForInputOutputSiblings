@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor="let student of students">
+    <div class="badge badge-primary" (click)="sendToChild(student)">
+      {{student.name}}
+    </div>
+  </div>
+</div>

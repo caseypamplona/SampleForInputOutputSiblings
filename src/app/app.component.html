@@ -1,0 +1,10 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2">
+    <app-sidebar [newStudent]="newStudent" (selectedStudent)="setStudent($event)"></app-sidebar>
+  </div>
+  <div class="col-md-10">
+    <app-detail-view [student]="currentStudent" (newStudent)="acceptStudent($event)"></app-detail-view>
+  </div>
+</div>
+</div>
